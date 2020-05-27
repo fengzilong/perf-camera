@@ -10,11 +10,13 @@ yarn global add perf-camera
 # Usage
 
 ```bash
+perfcam
+
 Commands:
   [...urls]  Record videos for these urls
 
 For more info, run any command with the `--help` flag:
-  $ index.js --help
+  $ perfcam --help
 
 Options:
   --repeat <count>  repeat count

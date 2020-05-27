@@ -1,0 +1,37 @@
+{
+  "name": "perf-camera",
+  "version": "0.1.0",
+  "description": "record perf video with lighthouse and ffmepg",
+  "main": "lib/index.js",
+  "bin": {
+    "perfcam": "bin/index.js"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengzilong/perf-camera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengzilong/perf-camera/issues"
+  },
+  "homepage": "https://github.com/fengzilong/perf-camera#readme",
+  "dependencies": {
+    "cac": "^6.5.10",
+    "chalk": "^4.0.0",
+    "chrome-launcher": "^0.13.2",
+    "execa": "^4.0.2",
+    "fs-extra": "^9.0.0",
+    "lighthouse": "^6.0.0",
+    "nanoid": "^3.1.9",
+    "speedline-core": "^1.4.2",
+    "tempy": "^0.5.0",
+    "tildify": "^2.0.0"
+  }
+}

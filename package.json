@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/fengzilong/perf-camera#readme",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "cac": "^6.5.10",
     "chalk": "^4.0.0",
     "chrome-launcher": "^0.13.2",

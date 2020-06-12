@@ -4,10 +4,11 @@ const cli = require( 'cac' )()
 const run = require( '../lib' )
 
 cli
-  .command( '[...urls]', 'Record videos for these urls' )
-  .option( '--repeat <count>', 'Repeat count')
-  .option( '--port <port>', 'Use custom port')
-  .option( '--visible', 'No headless')
+  .command( '<...urls>', 'Record videos for these urls' )
+  .option( '--repeat <count>', 'Repeat count' )
+  .option( '--port <port>', 'Use custom port' )
+  .option( '--visible', 'No headless' )
+  .option( '--remote', 'Disable throttling for remote real device' )
   .action( ( urls, options ) => {
     if ( urls.length === 0 ) {
       console.log( 'No url provided' )
@@ -20,6 +21,7 @@ cli
       repeatCount: options.repeat || 3,
       headless: Boolean( options.visible ) === false,
       port: options.port ? Number( options.port ) : void 0,
+      disableThrottling: Boolean( options.remote )
     } )
   } )
 
